@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skinkoreano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Skinkoreano</div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <a href="#inicio" class="mobile-link" onclick="closeMenu()">Inicio</a>
+                <a href="#productos" class="mobile-link" onclick="closeMenu()">Productos</a>
+                <a href="#servicios" class="mobile-link" onclick="closeMenu()">Servicios</a>
+                <a href="#contacto" class="mobile-link" onclick="closeMenu()">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        ✨ Skin<span class="gradient-text">koreano</span> 💖
+                    </h1>
+                    <p class="hero-subtitle">
+                        Descubre los secretos de la belleza coreana con nuestra colección exclusiva de productos para el
+                        cuidado de la piel
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/01.jpg"
+                                alt="Esencia Hidratante">
+                            <div class="product-badge">⭐ K-Beauty</div>
+                        </div>
+                        <h3>Esencia Hidratante</h3>
+                        <p>Fórmula coreana con ácido hialurónico para una hidratación profunda y duradera.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tulipan.jpg"
+                                alt="Serum Vitamina C">
+                            <div class="product-badge">⭐ K-Beauty</div>
+                        </div>
+                        <h3>Serum Vitamina C</h3>
+                        <p>Potente antioxidante que ilumina y unifica el tono de tu piel naturalmente.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/rosa.jpg"
+                                alt="Mascarilla Glow">
+                            <div class="product-badge">⭐ K-Beauty</div>
+                        </div>
+                        <h3>Mascarilla Glow</h3>
+                        <p>Mascarilla nocturna con extractos botánicos para un brillo natural al despertar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="products">
+        <div class="products-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros <span class="gradient-text">Productos</span></h2>
+                <p>Descubre nuestra selección premium de productos coreanos para el cuidado de la piel</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Producto 1 -->
+                        <div class="carousel-slide active">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/produc1.webp"
+                                        alt="Limpiador Espumoso">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Limpiador Espumoso</h3>
+                                    <p>Limpiador suave con pH balanceado que elimina impurezas sin resecar la piel.</p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/produc2.webp"
+                                        alt="Tónico Hidratante">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Tónico Hidratante</h3>
+                                    <p>Tónico con ingredientes naturales que prepara la piel para los siguientes pasos.
+                                    </p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/produc3.webp"
+                                        alt="Esencia Nutritiva">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Esencia Nutritiva</h3>
+                                    <p>Esencia concentrada con extractos fermentados para una piel luminosa.</p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/produc4.webp"
+                                        alt="Serum Anti-edad">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Serum Anti-edad</h3>
+                                    <p>Serum avanzado con péptidos y retinol para combatir los signos del
+                                        envejecimiento.</p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/produc4.webp"
+                                        alt="Crema Hidratante">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Crema Hidratante</h3>
+                                    <p>Crema ligera con textura gel que hidrata sin dejar sensación grasa.</p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    <img src="img/protector.jpg"
+                                        alt="Protector Solar">
+                                </div>
+                                <div class="slide-info">
+                                    <h3>Protector Solar</h3>
+                                    <p>SPF 50+ con protección UVA/UVB y acabado mate para uso diario.</p>
+                                    <div class="price">S/80.99</div>
+                                    <div class="slide-buttons">
+                                        <button class="btn-primary">👁️ Ver Más</button>
+                                        <button class="btn-secondary">🛒 Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <div class="services-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros <span class="gradient-text">Servicios</span></h2>
+                <p>Servicios especializados en cuidado de la piel con las mejores técnicas coreanas</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Consulta Personalizada">
+                        <div class="service-icon">✨</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Consulta Personalizada</h3>
+                        <p>Análisis detallado de tu tipo de piel y recomendaciones personalizadas por expertos en
+                            belleza coreana.</p>
+                        <button class="service-btn">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/rutina1.jpg"
+                            alt="Rutina K-Beauty">
+                        <div class="service-icon">👥</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Rutina K-Beauty</h3>
+                        <p>Diseñamos rutinas de 10 pasos adaptadas a tus necesidades específicas con productos premium
+                            coreanos.</p>
+                        <button class="service-btn">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/tratam.jpg"
+                            alt="Tratamientos Premium">
+                        <div class="service-icon">🏆</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Tratamientos Premium</h3>
+                        <p>Tratamientos faciales exclusivos con técnicas y productos importados directamente desde Corea
+                            del Sur.</p>
+                        <button class="service-btn">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/segui.jpg"
+                            alt="Seguimiento Continuo">
+                        <div class="service-icon">🕐</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Seguimiento Continuo</h3>
+                        <p>Monitoreo y ajustes de tu rutina de cuidado con citas de seguimiento y soporte personalizado.
+                        </p>
+                        <button class="service-btn">Más Información</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-card">
+                    <h3>¿Listo para transformar tu piel?</h3>
+                    <p>Agenda tu consulta gratuita y descubre el poder de la belleza coreana</p>
+                    <button class="cta-button">Agendar Consulta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="contact-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="gradient-text">Contacto</span></h2>
+                <p>Conecta con nosotros y comienza tu transformación hacia una piel perfecta</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Formulario -->
+                <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" name="name" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" name="phone" placeholder="Tu número de teléfono">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Servicio de interés</label>
+                            <select name="service">
+                                <option value="consulta">Consulta Personalizada</option>
+                                <option value="rutina">Rutina K-Beauty</option>
+                                <option value="tratamiento">Tratamiento Premium</option>
+                                <option value="seguimiento">Seguimiento Continuo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea name="message" rows="4"
+                                placeholder="Cuéntanos sobre tus necesidades de cuidado de la piel..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">📤 Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Información de Contacto</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <p class="contact-label">Teléfono</p>
+                                <p class="contact-value">+51 902 153 054</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:info.skincoreano@gmail.com">info.skincoreano@gmail.com</a>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <p class="contact-label">Dirección</p>
+                                <p class="contact-value">🚚</p>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Síguenos</h4>
+                            <div class="social-links">
+                                <a href="https://wa.me/c/51902153054" target="_blank" class="social-link whatsapp"><img
+                                        src="img/whatsapp.png" width="50" alt=""></a>
+                                <a href="https://www.facebook.com/skincoreano.pe" target="_blank"
+                                    class="social-link facebook"><img src="img/facebook.png" width="52" alt=""></a>
+                                <a href="https://www.instagram.com/skin_coreano/" target="_blank"
+                                    class="social-link instagram"><img src="img/instagram (1).png" width="50"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <h3>Ubicación</h3>
+                        <div class="location-content">
+                            <div class="location-icon">📍</div>
+                            <p>Encuéntranos en el corazón de la ciudad</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.397510021708!2d-76.97987461370765!3d-12.085486791774152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c79f5dacafbf%3A0x2aecf92fd4325f0d!2sJockey%20Plaza!5e0!3m2!1sen!2spe!4v1753981097173!5m2!1sen!2spe"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Skinkoreano</div>
+                <p class="footer-description">Transformando tu piel con los secretos de la belleza coreana</p>
+
+                <div class="footer-bottom">
+                    <p class="footer-credit">
+                        Design by <span class="designer">Mc</span> 🐈
+                    </p>
+                    <p class="footer-copyright">© 2025 Skinkoreano. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
